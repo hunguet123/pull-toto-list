@@ -22,4 +22,13 @@ class HomeViewModel : ViewModel(), KoinComponent {
             error.value = e.message
         }
     }
+
+    fun deleteTask(position : Int) = viewModelScope.launch {
+        try {
+            taskRepository.deleteTask(tasks.value?.get(position))
+            tasks.value = taskRepository.getTasks().sortedByDescending { it.id }
+        } catch (e : Exception) {
+            error.value = e.message
+        }
+    }
 }
