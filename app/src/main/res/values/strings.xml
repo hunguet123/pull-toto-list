@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">todoList</string>
+    <string name="app_name">Todo App</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_create">Create new one</string>
+    <string name="hint_enter_title_here">Enter title here</string>
+    <string name="hint_enter_description">Enter description</string>
+    <string name="text_count">Todo count: %d</string>
+    <string name="title_delete">Do you want to delete this item?</string>
+    <string name="title_yes">yes</string>
+    <string name="title_no">no</string>
 </resources>
